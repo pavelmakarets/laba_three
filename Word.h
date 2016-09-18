@@ -8,7 +8,7 @@ public:
 	Word();
 	~Word();
 private:
-	Developer developer;
+	Developer* developer;
 
 	/*enum Fonts
 	{
@@ -20,12 +20,7 @@ private:
 
 	class Font
 	{
-		char fonts[4][16] = {
-			"Arial",
-			"Calibri",
-			"Times New Roman",
-			"Lucida Console"
-		};
+		static const char fonts[4][16];
 		std::string font;
 		int size;
 	public:

@@ -7,6 +7,6 @@ public:
 	Textprocess();
 	~Textprocess();
 private:
-	Developer developer;
+	Developer* developer;
 };
 

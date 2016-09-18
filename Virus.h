@@ -7,6 +7,6 @@ public:
 	Virus();
 	~Virus();
 private:
-	Developer developer;
+	Developer* developer;
 };
 

@@ -8,8 +8,8 @@
 
 void main()
 {
+	Developer* dev = new Developer("Pavel");
+	delete dev;
 
-
-
-
+	system("pause");
 }

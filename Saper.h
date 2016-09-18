@@ -7,6 +7,6 @@ public:
 	Saper();
 	~Saper();
 private:
-	Developer developer;
+	Developer* developer;
 };
 

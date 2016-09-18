@@ -7,6 +7,6 @@ public:
 	Game();
 	~Game();
 private:
-	Developer developer;
+	Developer* developer;
 };
 

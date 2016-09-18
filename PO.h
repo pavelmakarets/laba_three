@@ -7,6 +7,6 @@ public:
 	PO();
 	~PO();
 private:
-	Developer developer;
+	Developer* developer;
 };
 
