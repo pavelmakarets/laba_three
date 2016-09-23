@@ -3,7 +3,9 @@
 
 Game::Game()
 {
-	this->developer = new Developer("Pavel");
+	this->developer = PO::developer;
+	this->name = "Saper";
+	this->version = 1.3;
 }
 
 

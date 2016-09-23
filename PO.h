@@ -6,7 +6,7 @@ class PO
 public:
 	PO();
 	~PO();
-private:
+	virtual void ToConsole() = 0;
 	Developer* developer;
 };
 

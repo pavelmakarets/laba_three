@@ -4,7 +4,12 @@
 class Saper:public Game
 {
 public:
+	
 	Saper();
+	void ToConsole()
+	{
+
+	}
 	~Saper();
 private:
 	Developer* developer;

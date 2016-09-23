@@ -3,7 +3,7 @@
 
 Virus::Virus()
 {
-	this->developer = new Developer("Pavel");
+	this->developer = PO::developer;
 }
 
 

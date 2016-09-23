@@ -3,7 +3,8 @@
 
 Saper::Saper()
 {
-	this->developer = new Developer("Pavel");
+	this->developer = PO::developer;
+	this->hero = "Maks";
 }
 
 

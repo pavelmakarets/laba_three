@@ -7,47 +7,38 @@ class Word:public Textprocess
 public:
 	Word();
 	~Word();
-private:
-	Developer* developer;
-
-	/*enum Fonts
+	int get_fontsize()
 	{
-		Arial,
-		Calibri,
-		Times_New_Roman,
-		Lucida_Console
-	};*/
-
+		return this->Arial->get_size();
+	}
+	void Create_Document();
+	void ToConsole()
+	{
+		cout << Arial << endl;
+		cout << Arial->get_size() << endl;
+	}
+//*************************************
 	class Font
 	{
-		static const char fonts[4][16];
-		std::string font;
+		Word* MicrosoftWord;
 		int size;
 	public:
-		std::string getfont()
+		Font(Word *word,int size)
 		{
-			return this->font;
+			MicrosoftWord = word;
+			this->size = size;
 		}
-		void setfont(std::string font)
-		{
-			for (int i = 0; i < 4; i++)
-			{
-				if (fonts[i] == font)
-				{
-					this->font = font;
-				}
-			}
-		}
-		int getsize()
+		int get_size()
 		{
 			return this->size;
 		}
-		void setsize(int size)
+		void create_doc()
 		{
-			this->size = size;
+			MicrosoftWord->Create_Document();
 		}
 	};
-
-	Font font;
+//*************************************
+private:
+	Developer* developer;
+	Font* Arial;
 };
-
