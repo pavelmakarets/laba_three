@@ -7,6 +7,8 @@
 #include "Word.h"
 #include "Inspector.h"
 #include "Printer.h"
+#include "Computer.h"
+#include "Keyboard.h"
 
 void main()
 {
@@ -38,8 +40,8 @@ void main()
 	/*Printer* print = new Printer();
 	Word* word = new Word();
 	print->iAmPrinting(word);
-	Game* Saper = new Game();
-	print->iAmPrinting(Saper);*/
+	Saper* saper = new Saper();
+	print->iAmPrinting(saper);*/
 
 
 	//8
@@ -59,6 +61,29 @@ void main()
 	Textprocess* text1;
 	text1 = dynamic_cast<Textprocess*>(word1);*/
 
+
+	Computer* computer = new Computer();
+	Keyboard* keybord = new Keyboard(computer);
+	keybord->install_SOFT();
+	keybord->print_SOFT();
+
+	//computer->print_PO();
+
+	//keybord->poisc_SOFT("Saper");
+
+	/*computer->set_PO("CS",new Game("Dota",1.8));
+	computer->print_PO();*/
+
+	/*PO* po = computer->get_PO("Stronghold");
+	po->ToConsole();*/
+
+	/*computer->remove_PO("Stronghold");
+
+	computer->print_PO();*/
+
+	/*computer->remove_PO("Saper");
+
+	computer->print_PO();*/
 
 	system("pause");
 }

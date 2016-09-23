@@ -1,13 +1,17 @@
 #include "Game.h"
 
 
-Game::Game()
+Game::Game(string name,double version)
 {
 	this->developer = PO::developer;
-	this->name = "Saper";
-	this->version = 1.3;
+	this->name = name;
+	this->version = version;
+	PO::set_name(name);
 }
 
+Game::Game()
+{
+}
 
 Game::~Game()
 {

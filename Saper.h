@@ -8,10 +8,11 @@ public:
 	Saper();
 	void ToConsole()
 	{
-
+		cout << this->name << endl;
 	}
 	~Saper();
 private:
 	Developer* developer;
+	string name = "Saper";
 };
 

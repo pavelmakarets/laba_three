@@ -1,11 +1,12 @@
 #pragma once
 #include "PO.h"
 
-class Game:protected PO
+class Game:public PO //protect для задания 2
 {
 public:
 	string hero;
 	Game();
+	Game(string,double);
 	void ToConsole()
 	{
 		cout << name << endl;

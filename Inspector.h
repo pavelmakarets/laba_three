@@ -6,9 +6,9 @@ using namespace std;
 class Inspector
 {
 public:
-	static int count;
+	//static int count;
 	Inspector(Developer* dev);
 	~Inspector();
 };
-int Inspector::count = 0;
+//int Inspector::count = 0;
 
