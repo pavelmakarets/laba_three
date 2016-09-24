@@ -105,8 +105,12 @@ void Computer::perebor()
 	{
 		string a = Head->get_name();
 		char mas1[10];
-		strcpy(mas1, a.c_str());
-		for (int j = 0; j < a.length; j++)
+		for (int j = 0; j < a.length(); j++)
+		{
+			mas1[j] = a.c_str()[j];
+		}
+
+		for (int j = 0; j < a.length(); j++)
 		{
 			for (int i = 0; i < 26; i++)
 			{

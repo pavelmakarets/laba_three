@@ -18,7 +18,7 @@ public:
 	}
 	void print_SOFT()
 	{
-		this->comp->perebor();
+		this->comp->print_PO();
 	}
 	~Keyboard();
 private:
